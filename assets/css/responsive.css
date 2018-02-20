@@ -1,0 +1,52 @@
+/*    Responsive code for the deference device
+      are goes here.
+*/
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .single-skill-item {
+        margin-top: 50px;
+    }
+    .home-skill-area {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    .single-skill-item {
+        margin-top: 30px;
+    }
+    .home-skill-area {
+        margin-top: 50px;
+    }
+    .mini-header {
+        display: none;
+    }
+    
+    .flex-caption h3 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .navbar-collapse {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .single-skill-item {
+        margin-top: 30px;
+    }
+    .home-skill-area {
+        margin-top: 50px;
+    }
+    .mini-header {
+        display: none;
+    }
+    .flex-caption{
+        height: 10px;
+    }
+    .flex-caption h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}

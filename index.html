@@ -1,0 +1,578 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MyHome</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <header>
+        <div class="mini-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="close-days pull-left">
+                            <i class="fa fa-clock-o"></i>
+                            <span class="close-text">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                        </div>
+                        <div class="phone pull-right">
+                            <i class="fa fa-phone"></i>
+                            <span class="phone-number">Tel No. (+001) 123-456-789</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand wow" href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav main-menu wow">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">Company</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Investors</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Accounts <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="" data-toggle="modal" data-target="#logIn">Login</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#signUp">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  All Modal Goes Here  -->
+
+    <!--    login modal box-->
+
+
+    <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="account-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="checkbox">
+                                <label for="login-checkbox"><input type="checkbox" id="login-checkbox" class="">Remember Me</label>
+                            </div>
+                            <div class="recover">
+                                <a href="">Forgot password?</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="box-button">
+                            </div>
+                        </form>
+                        <div class="toggle-form">
+                            <span><a href="" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Create a new acccount</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup modal box  -->
+
+
+    <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="account-form">
+                        <form action="" class="form modal-form">
+                            <div class="form-group">
+                                <label for="fName">First Name: </label>
+                                <input type="text" id="fName" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lName">Last Name: </label>
+                                <input type="text" id="lName" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-password">Confirm Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="c-password" required>
+                            </div>
+                            <div class="checkbox">
+                                <label for="login-checkbox" class="terms"><input type="checkbox" id="login-checkbox" class="">Agree with <a href="#">terms</a> and <a href="#">conditions</a></label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Sign Up" class="box-button">
+                            </div>
+                        </form>
+                        <span>Allready have a account? <a href="" data-toggle="modal" data-target="#logIn" data-dismiss="modal"> Login</a></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Modal end  -->
+
+    <section id="banner">
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/img/slides/1.jpg" alt="">
+                    <div class="flex-caption">
+                        <h3>Gated Villas</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/img/slides/2.jpg" alt="">
+                    <div class="flex-caption">
+                        <h3>Trendy Home</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/img/slides/3.jpg" alt="">
+                    <div class="flex-caption">
+                        <h3>Sweet Apartments</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="home-skill-area wow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-skill-item wow skill-animate-1">
+                        <div class="skill-header">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="skill-body">
+                            <h3>NEW PROJECT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusantium quas, nisi iusto molestiae possimus reprehenderit repellendus ducimus totam sequi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-skill-item wow skill-animate-2 ">
+                        <div class="skill-header">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="skill-body">
+                            <h3>READY TO MOVE</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusantium quas, nisi iusto molestiae possimus reprehenderit repellendus ducimus totam sequi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-skill-item wow skill-animate-3">
+                        <div class="skill-header">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <div class="skill-body">
+                            <h3>COMMERCIAL</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusantium quas, nisi iusto molestiae possimus reprehenderit repellendus ducimus totam sequi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-skill-item wow skill-animate-4">
+                        <div class="skill-header">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="skill-body">
+                            <h3>GATED PROJECTS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusantium quas, nisi iusto molestiae possimus reprehenderit repellendus ducimus totam sequi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending-projects">
+        <div class="padding-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="trending-project-header text-center">
+                        <h1 class="animated-header wow"><span class="green-text">TRENDING</span> PROJECTS</h1>
+                        <p class="animated-para wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eveniet, sequi quo sit dolor odit, earum alias quod inventore expedita voluptates labore minima quos molestiae maiores facere laboriosam. Beatae, sunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-trending-project-item wow animated-project-1">
+                        <figure class="trending-project-figure">
+                            <img src="assets/img/img1.jpg" alt="">
+                            <figcaption class="trending-project-caption">
+                                <h4 class="green-text">Apartments</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magni officiis perspiciatis doloribus quisquam recusandae!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-trending-project-item wow animated-project-2">
+                        <figure class="trending-project-figure">
+                            <img src="assets/img/img2.jpg" alt="">
+                            <figcaption class="trending-project-caption">
+                                <h4 class="green-text">luxury Villas</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magni officiis perspiciatis doloribus quisquam recusandae!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-trending-project-item wow animated-project-3">
+                        <figure class="trending-project-figure">
+                            <img src="assets/img/img3.jpg" alt="">
+                            <figcaption class="trending-project-caption">
+                                <h4 class="green-text">Apartments</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magni officiis perspiciatis doloribus quisquam recusandae!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-trending-project-item wow animated-project-4">
+                        <figure class="trending-project-figure">
+                            <img src="assets/img/img4.jpg" alt="">
+                            <figcaption class="trending-project-caption">
+                                <h4 class="green-text">Gated Projects</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magni officiis perspiciatis doloribus quisquam recusandae!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-100"></div>
+    </div>
+
+    <div class="recent-project text-justify">
+        <div class="padding-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="recent-project-header text-center">
+                        <h1 class="wow animated-header"><span class="green-text">RECENT </span>PROJECTS</h1>
+                        <p class="wow animated-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quis recusandae, provident sit, velit temporibus. Natus aperiam adipisci quod nulla incidunt ab, ut aut quasi. Totam eveniet aliquam pariatur voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-1">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img5.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">Apartments</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-2">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img6.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">Gated Projects</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-3">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img7.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">luxury Villas</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-1">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img8.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">Apartments</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-2">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img9.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">luxury Villas</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-recent-item wow animated-project-3">
+                        <figure class="recent-project-figure">
+                            <img src="assets/img/img10.jpg" alt="">
+                            <figcaption class="recent-item-caption">
+                                <h4 class="green-text">Gated Projects</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maxime nam doloremque, praesentium dolor voluptates distinctio quia tempore possimus dolores!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-100"></div>
+    </div>
+
+    <div class="home-about">
+        <div class="padding-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="home-about-header text-center">
+                        <h1 class="wow animated-header"><span class="green-text">ABOUT </span>OUR COMPANY</h1>
+                        <p class="wow animated-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore libero commodi autem eveniet vero voluptatem veritatis quisquam numquam eius, quia iure unde repellat! Quaerat id, nulla fuga temporibus. Ad, necessitatibus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="home-about-left-content wow text-justify">
+                        <div class="home-about-caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus, veritatis aperiam distinctio, a accusantium aliquid eos dignissimos eveniet officiis incidunt, consectetur aut atque nisi dolores soluta nemo rerum non! Iure provident quam velit animi fuga sunt, magnam quidem libero!</p>
+                        </div>
+                        <div class="home-about-list">
+                            <ul>
+                                <li><i class="fa fa-angle-right"></i><span class="home-about-span">Lorem ipsum dolor sit amet.</span></li>
+                                <li><i class="fa fa-angle-right"></i><span class="home-about-span">Lorem ipsum dolor sit amet, consectetur</span></li>
+                                <li><i class="fa fa-angle-right"></i><span class="home-about-span">Lorem ipsum dolor sit.</span></li>
+                                <li><i class="fa fa-angle-right"></i><span class="home-about-span">Lorem ipsum dolor sit amet, consectetur elit.</span></li>
+                                <li><i class="fa fa-angle-right"></i><span class="home-about-span">Lorem ipsum dolor sit amet.</span></li>
+                            </ul>
+                        </div>
+                        <a href="" id="home-about-button" class="btn btn-default box-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="home-about-right-content wow">
+                        <div class="about-img">
+                            <img src="assets/img/about.jpg" style="margin-top: 35px; max-width: 100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-100"></div>
+    </div>
+
+    <footer>
+        <div class="padding-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="bigFooter">
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="our-contact">
+                                <h4 class="green-text">Our Contacts</h4>
+                                <p class="compani-title">MyHome Inc</p>
+                                <p>JC Main Road, Near Silnile tower<br> Pin-21542 NewYork US.</p>
+                                <p>(123) 456-789 - 1255-12584<br> email@domainname.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="quick-links">
+                                <h4 class="green-text">Quick Links</h4>
+                                <ul>
+                                    <li><a href="">Letest Events</a></li>
+                                    <li><a href="">Terms and Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="" data-toggle="modal" data-target="#logIn">Login</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="letest-post">
+                                <h4 class="green-text">Letest Posts</h4>
+                                <ul>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="letest-news">
+                                <h4 class="green-text">Letest News</h4>
+                                <ul>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bottom-footer">
+                        <div class="footer-left pull-left">
+                            <p>&copy; BITM 2018 All right reserved. Template By <span class="green-text">Rajib Hossain</span></p>
+                        </div>
+                        <div class="right-footer pull-right">
+                            <ul class="social-icons">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Scroll up button-->
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+
+
+
+
+    <script src="assets/js/vendor/jquery.12.0.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $(window).load(function() {
+            var wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            });
+            wow.init();
+        });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>

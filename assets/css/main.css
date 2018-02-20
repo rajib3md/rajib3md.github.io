@@ -1,0 +1,1297 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    color: #656565;
+}
+
+.padding-100 {
+    padding: 50px 0;
+}
+
+.padding-50 {
+    padding: 25px 0;
+}
+
+.green-text {
+    color: #46BD55;
+}
+
+.box-button {
+    padding: 10px 25px;
+    background: #46BD55;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box-button:hover {
+    background: #35AC44;
+    color: #fff;
+}
+
+.mini-header {
+    height: 30px;
+    line-height: 30px;
+    background: #46BD55;
+    color: #fff;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar-brand {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: -1px;
+    margin-top: 14px;
+    padding: 0 0 0 15px;
+}
+
+.navbar-default .navbar-brand {
+    color: #1891EC;
+}
+
+header .navbar-collapse ul.navbar-nav {
+    float: right;
+    margin-right: 0;
+}
+
+header .navbar {
+    min-height: 70px;
+    padding: 18px 0;
+}
+
+.home-page header .navbar-default {
+    background: #ffffff;
+    width: 100%;
+}
+
+header .nav li a:hover,
+header .nav li a:focus,
+header .nav li.active a,
+header .nav li.active a:hover,
+header .nav li a.dropdown-toggle:hover,
+header .nav li a.dropdown-toggle:focus,
+header .nav li.active ul.dropdown-menu li a:hover,
+header .nav li.active ul.dropdown-menu li.active a {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header .navbar-default .navbar-nav>.open>a,
+header .navbar-default .navbar-nav>.open>a:hover,
+header .navbar-default .navbar-nav>.open>a:focus {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header .navbar {
+    /* min-height: 62px; */
+    padding: 0;
+}
+
+header .navbar-nav>li {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding: 0 !important;
+}
+
+header .navbar-nav>li>a {
+    margin-left: 2px;
+    line-height: 19px;
+    font-weight: 700;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #fff !important;
+    background: #46bd55 !important;
+}
+
+header .nav .caret {
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
+
+.dropdown-menu li:last-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+header .nav li .dropdown-menu {
+    padding: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+header .nav li .dropdown-menu li a {
+    line-height: 28px;
+    padding: 3px 12px;
+}
+
+
+/* --- menu --- */
+
+.flex-caption p {
+    line-height: 22px;
+    font-weight: 300;
+    color: #d2d2d2;
+}
+
+header .navigation {
+    float: right;
+}
+
+header ul.nav li {
+    border: none;
+    margin: 0;
+}
+
+header ul.nav li a {
+    font-size: 13px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 25px 15px;
+}
+
+header ul.nav li ul li a {
+    font-size: 12px;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.navbar .nav li a {
+    color: #212121;
+    text-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.navbar .nav a:hover {
+    background: none;
+    color: #ff9818;
+}
+
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover {
+    background: none;
+}
+
+.navbar .nav>.active>a:active,
+.navbar .nav>.active>a:focus {
+    background: none;
+    outline: 0;
+    font-weight: 700;
+}
+
+.navbar .nav li .dropdown-menu {
+    z-index: 2000;
+}
+
+header ul.nav li ul {
+    margin-top: 1px;
+}
+
+header ul.nav li ul li ul {
+    margin: 1px 0 0 1px;
+}
+
+.dropdown-menu .dropdown i {
+    position: absolute;
+    right: 0;
+    margin-top: 3px;
+    padding-left: 20px;
+}
+
+.navbar .nav>li>.dropdown-menu:before {
+    display: inline-block;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-bottom-color: none;
+    content: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #46bd55;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #46bd55;
+    background-color: transparent;
+}
+
+ul.nav li.dropdown a {
+    z-index: 1000;
+    display: block;
+}
+
+select.selectmenu {
+    display: none;
+}
+
+.pageTitle {
+    color: #fff;
+    margin: 30px 0 3px;
+    display: inline-block;
+}
+
+#banner {
+    width: 100%;
+    background: #000;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#main-slider:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 150, 204, 0.1);
+    z-index: 1;
+    position: absolute;
+}
+
+.flex-direction-nav a {
+    display: none;
+}
+
+.flexslider {
+    padding: 0;
+    background: #fff;
+    position: relative;
+    zoom: 1;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 0px;
+}
+
+.flex-direction-nav .flex-next {
+    right: 0px;
+}
+
+.flex-caption {
+    zoom: 1;
+    bottom: 198px;
+    background-color: transparent;
+    color: #fff;
+    margin: 0;
+    padding: 2px 25px 0px 30px;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    right: 0px;
+    display: inline-block;
+    bottom: 90px;
+    width: 50%;
+    right: 0 !important;
+    border-radius: 15px 15px 0 0;
+}
+
+.flex-caption h3 {
+    color: #fff;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    font-size: 46px;
+    font-weight: 700;
+    text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.44);
+}
+
+.flex-caption p {
+    margin: 12px 0 18px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.flex-control-paging li a {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    background: #ffffff;
+    text-indent: 50px;
+    overflow: hidden;
+}
+
+
+/*skill area style*/
+
+.skill-header {
+    text-align: center;
+    font-size: 48px;
+    color: #46BD55;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 3px solid #46BD55;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.28);
+}
+
+.single-skill-item {
+    background: #F7F7F7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.skill-body {
+    border: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+}
+
+.home-skill-area {
+    margin-top: -65px;
+}
+
+.trending-project-header,
+.recent-project-header,
+.home-about-header,
+.awesome-service-header,
+.pricing-header,
+.contact-header,
+.project-header {
+    padding-bottom: 50px;
+}
+
+
+/*Trending Project Style*/
+
+.trending-project-figure img {
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+h4.green-text {
+    font-weight: bold;
+}
+
+
+/*Recent Project Style*/
+
+.recent-project {
+    background: #F0F0F0;
+}
+
+.recent-project-figure img {
+    max-width: 100%;
+    margin: 20px 0 15px;
+}
+
+.home-about-list ul li {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.home-about-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.home-about-list ul li i {
+    color: #46BD55;
+    padding: 2px 6px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.home-about-list {
+    margin-top: 35px;
+}
+
+.home-about-left-content {
+    margin-top: 35px;
+}
+
+#home-about-button {
+    margin-top: 30px;
+}
+
+
+/*Footer style*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #191919;
+    color: #999;
+    padding-bottom: 40px
+}
+
+footer a {
+    color: #999;
+}
+
+.compani-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.single-bigFooter-item h4 {
+    margin-bottom: 30px;
+}
+
+.single-bigFooter-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.single-bigFooter-item ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.single-bigFooter-item ul li a:hover {
+    color: #35AC44;
+    text-decoration: none;
+}
+
+.bottom-footer {
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}
+
+.social-icons li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #2D2D2D;
+    font-size: 14px;
+}
+
+.social-icons li a:hover {
+    color: #35AC44;
+}
+
+
+/*Home style end*/
+
+.box-header {
+    height: 180px;
+    text-align: center;
+    background: url(../img/slides/background.jpg);
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.overlay h1 {
+    line-height: 180px;
+    color: #46BD55;
+}
+
+.why-us h3 {
+    margin-bottom: 30px;
+}
+
+#accordion-alt3 .panel-heading h4 {
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.panel .panel-heading h4 {
+    font-weight: 400;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: inherit;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 2px;
+}
+
+.panel {
+    margin-bottom: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #f3f3f3;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#accordion-alt3 .panel-heading h4 a i {
+    font-size: 17px;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    color: #A0A0A0;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.progress.pb-sm {
+    height: 6px!important;
+}
+
+.progress {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+    -ms-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+    -o-box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+}
+
+.progress {
+    overflow: hidden;
+    height: 18px;
+    margin-bottom: 18px;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress .progress-bar.progress-bar-red {
+    background: #ed5441;
+}
+
+.progress .progress-bar.progress-bar-green {
+    background: #51d466;
+}
+
+.progress .progress-bar.progress-bar-lblue {
+    background: #32c8de;
+}
+
+.organization-caption h2 {
+    margin-bottom: 30px;
+}
+
+.organizaion-img img {
+    max-width: 100%;
+}
+
+.single-team-item .figure img {
+    max-width: 100%;
+}
+
+.figure {
+    text-align: center;
+}
+
+
+/*About Style End*/
+
+
+/*Service Style*/
+
+.awesome-service {
+    padding: 40px 0 0 0;
+}
+
+.single-service-items {
+    margin: 35px 0;
+}
+
+.info-blocks {
+    width: 72px;
+    height: 72px;
+    border: 1px solid;
+    color: #46BD55;
+    line-height: 72px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    margin-right: 15px;
+}
+
+.services-figure img {
+    max-width: 100%;
+}
+
+.services-thumbnails {
+    padding: 50px 0;
+}
+
+
+/*Service page style end*/
+
+
+/*projects page style*/
+
+.project-header {
+    padding: 50px 0;
+}
+
+#gallery-1 {
+    padding-bottom: 50px;
+}
+
+
+/*Pricing page Style*/
+
+.pricing-item-area {
+    padding: 50px 0px;
+}
+
+.pricing-header {
+    padding: 50px 0 0;
+}
+
+.single-pricing-item:hover {
+    -webkit-box-shadow: 0px 1px 30px;
+    -moz-box-shadow: 0px 1px 30px;
+    -ms-box-shadow: 0px 1px 30px;
+    -o-box-shadow: 0px 1px 30px;
+    box-shadow: 0px 1px 30px;
+}
+
+.single-pricing-item {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.single-pricing-item:hover {
+    transform: scale(1.1);
+}
+
+.single-pricing-item:hover .pricing-box-header-text {
+    color: #35AC44;
+}
+
+.pricing-box-header {
+    width: 100%;
+    height: 200px;
+    border-bottom: 3px solid #46BD55;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 200px;
+    text-align: center;
+}
+
+.pricing-box-price {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px dotted #bbb;
+    background: #EDEDED;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    word-spacing: 6px;
+}
+
+.package-items ul {
+    margin: 0;
+    padding: 0;
+}
+
+.package-items ul li {
+    list-style: none;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.pricing-button {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.pricing-button a:hover {
+    background: #35AC44 !important;
+    color: #fff;
+}
+
+
+/*Contact page styles*/
+
+.contact-area {
+    padding: 50px 0;
+}
+
+#email,
+#name,
+#message {
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+input.box-button {
+    margin-top: 15px;
+}
+
+.contact-map {
+    height: 370px;
+    margin-top: 59px;
+}
+
+
+/*================================
+    All Modal Styles
+==================================*/
+
+.modal-header {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background: #46BD55;
+    text-align: center;
+}
+
+.account-form {
+    max-width: 320px;
+    border: 1px solid #46BD55;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    /*    color: #46BD55;*/
+}
+
+.modal-footer {
+    width: 100%;
+    height: auto;
+    background: #46BD55;
+}
+
+h4.modal-title {
+    color: #fff;
+    font-size: 23px;
+}
+
+#password,
+#lName,
+#fName,
+#c-password,
+#email,
+#name,
+#message,
+#item-count,
+#cardNumber,
+#cardName,
+#cvv,
+#card-expiry-year,
+#card-expiry-month {
+    border: 1px solid #46BD55;
+    border-radius: 0px;
+}
+
+.terms {
+    color: #333;
+}
+
+.terms a {
+    text-decoration: underline;
+}
+
+.modal-footer button {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    color: #46BD55 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.account-form a {
+    color: #46BD55;
+}
+
+/*download page styles*/
+
+.single-video-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.single-video-item .box-button {
+    margin: 20px 0;
+    display: inline-block;
+    width: 130px;
+}
+
+.single-video-item {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+/*Pricing Modal style*/
+
+#paypal-pay,
+#masterCard-pay {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#paypal-pay i,
+#masterCard-pay i {
+    font-size: 55px;
+    float: right;
+    line-height: 60px;
+}
+
+#paypal-pay:hover,
+#masterCard-pay:hover {
+    color: #46BD55;
+    background: #ddd;
+}
+
+#cardNumber,
+#cardName {
+    width: 48%;
+}
+
+#card-expiry-year,
+#card-expiry-month,
+#cvv {
+    width: 31%;
+    display: inline;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#card-expiry-month {
+    margin-left: 20px;
+}
+
+#price-modal-button {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* ----------- Modal style end ----------- */
+
+.scrollup {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    bottom: 0px;
+    right: 20px;
+    background: #46bd55;
+}
+
+a.scrollup {
+    outline: 0;
+    text-align: center;
+}
+
+a.scrollup:hover,
+a.scrollup:active,
+a.scrollup:focus {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a.scrollup i {
+    margin-top: 10px;
+    color: #fff;
+}
+
+a.scrollup i:hover {
+    text-decoration: none;
+}
+
+.mfp-no-margins img.mfp-img {
+    padding: 0;
+}
+
+
+/* position of shadow behind the image */
+
+.mfp-no-margins .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+}
+
+
+/* padding for main container */
+
+.mfp-no-margins .mfp-container {
+    padding: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

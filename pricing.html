@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pricing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <header>
+        <div class="mini-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="close-days pull-left">
+                            <i class="fa fa-clock-o"></i>
+                            <span class="close-text">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                        </div>
+                        <div class="phone pull-right">
+                            <i class="fa fa-phone"></i>
+                            <span class="phone-number">Tel No. (+001) 123-456-789</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">Company</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Investors</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li class="active"><a href="pricing.html">Pricing</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Accounts <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="" data-toggle="modal" data-target="#logIn">Login</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#signUp">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  All Modal Goes Here  -->
+
+    <!--    login modal box-->
+
+
+    <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="account-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="recover">
+                                <a href="">Forgot password?</a>
+                            </div>
+                            <div class="checkbox">
+                                <label for="login-checkbox"><input type="checkbox" id="login-checkbox" class="">Remember Me</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="box-button">
+                            </div>
+                        </form>
+                        <div class="toggle-form">
+                            <span><a href="" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Create a new acccount</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup modal box  -->
+
+
+    <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="account-form">
+                        <form action="" class="form modal-form">
+                            <div class="form-group">
+                                <label for="fName">First Name: </label>
+                                <input type="text" id="fName" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lName">Last Name: </label>
+                                <input type="text" id="lName" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-password">Confirm Password</label>
+                                <input type="password" placeholder="password" class="form-control" id="c-password" required>
+                            </div>
+                            <div class="checkbox">
+                                <label for="login-checkbox" class="terms"><input type="checkbox" id="login-checkbox" class="">Agree with <a href="#">terms</a> and <a href="#">conditions</a></label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Sign Up" class="box-button">
+                            </div>
+                        </form>
+                        <span>Allready have a account? <a href="" data-toggle="modal" data-target="#logIn" data-dismiss="modal"> Login</a></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Modal end  -->
+
+
+
+    <div class="box-header">
+        <div class="overlay">
+            <h1 class="animated-box wow">PRICING</h1>
+        </div>
+    </div>
+
+
+    <div class="pricing-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="green-text">PROPERTY </span>PRICING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aliquid labore veritatis, repellat molestias libero facere ipsum, autem, praesentium architecto itaque cupiditate, distinctio aut. Facere, tenetur ipsa odit quasi voluptatum soluta veritatis ipsum architecto, sint quisquam vero rerum temporibus maiores!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officiis iste excepturi nihil sint inventore nisi ut ea tenetur. Ipsum ea, explicabo assumenda in doloribus aliquam repellat numquam sint, nostrum exercitationem accusamus voluptates harum laboriosam iure, atque voluptatibus est eaque!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-item-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-pricing-item wow animated-project-1">
+                        <div class="pricing-box-header">
+                            <span class="pricing-box-header-text">Basic</span>
+                        </div>
+                        <div class="pricing-box-price green-text">
+                            <span class="price-text">$15.00 / Year</span>
+                        </div>
+                        <div class="package-items">
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>Bootstrap Design</li>
+                                <li>Unlimited Support</li>
+                                <li>Free Trial version</li>
+                                <li>HTML5 CSS3 jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="" class="btn btn-default box-button" data-toggle="modal" data-target="#pricing-modal">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-pricing-item wow animated-project-2">
+                        <div class="pricing-box-header">
+                            <span class="pricing-box-header-text">Standard</span>
+                        </div>
+                        <div class="pricing-box-price green-text">
+                            <span class="price-text">$15.00 / Year</span>
+                        </div>
+                        <div class="package-items">
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>Bootstrap Design</li>
+                                <li>Unlimited Support</li>
+                                <li>Free Trial version</li>
+                                <li>HTML5 CSS3 jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="" class="btn btn-default box-button" data-toggle="modal" data-target="#pricing-modal">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-pricing-item wow animated-project-3">
+                        <div class="pricing-box-header">
+                            <span class="pricing-box-header-text">Advanced</span>
+                        </div>
+                        <div class="pricing-box-price green-text">
+                            <span class="price-text">$15.00 / Year</span>
+                        </div>
+                        <div class="package-items">
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>Bootstrap Design</li>
+                                <li>Unlimited Support</li>
+                                <li>Free Trial version</li>
+                                <li>HTML5 CSS3 jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="" class="btn btn-default box-button" data-toggle="modal" data-target="#pricing-modal">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-pricing-item wow animated-project-4">
+                        <div class="pricing-box-header">
+                            <span class="pricing-box-header-text">Mighty</span>
+                        </div>
+                        <div class="pricing-box-price green-text">
+                            <span class="price-text">$15.00 / Year</span>
+                        </div>
+                        <div class="package-items">
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>Bootstrap Design</li>
+                                <li>Unlimited Support</li>
+                                <li>Free Trial version</li>
+                                <li>HTML5 CSS3 jQuery</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-button">
+                            <a href="" class="btn btn-default box-button" data-toggle="modal" data-target="#pricing-modal">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Pricing Modal goes here   -->
+
+
+    <div id="pricing-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Payment Ditails</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Choose Payment Method</h3>
+
+                    <label for="paypal" id="paypal-pay"><input type="radio" id="paypal" name="payment-method"> PayPal <span>Safe Payment Online</span> <i class="fa fa-cc-paypal"></i></label>
+                    <label for="master-card" id="masterCard-pay"><input type="radio"  id="master-card" name="payment-method"> Master Card <span>Safe Payment Online</span> <i class="fa fa-cc-mastercard"></i></label>
+                    <hr>
+
+                    <div class="card-details">
+                        <h3 class="green-text text-center" style="padding-bottom: 20px;">Card Information</h3>
+                        <form action="">
+                            <input type="text" class="form-control pull-left" id="cardNumber" placeholder="Card Number">
+                            <input type="text" class="form-control pull-right" id="cardName" placeholder="Name in Card">
+                            <select name="" id="card-expiry-year" class="form-control pull-left">
+                               <option value="">Year</option>
+                               <option value="2017">2017</option>
+                               <option value="2018">2018</option>
+                               <option value="2019">2019</option>
+                               <option value="2020">2020</option>
+                               <option value="2021">2021</option>
+                               <option value="2022">2022</option>
+                               <option value="2023">2023</option>
+                               <option value="2024">2024</option>
+                               <option value="2025">2025</option>
+                           </select>
+                            <select name="" id="card-expiry-month" class="form-control">
+                               <option value="">Month</option>
+                               <option value="january">Jan</option>
+                               <option value="februry">Feb</option>
+                               <option value="march">Mar</option>
+                               <option value="april">Apr</option>
+                               <option value="may">May</option>
+                               <option value="jun">Jun</option>
+                               <option value="july">Jul</option>
+                               <option value="augost">Aug</option>
+                               <option value="september">Sep</option>
+                               <option value="october">Act</option>
+                               <option value="november">Nov</option>
+                               <option value="desember">Des</option>
+                           </select>
+                            <input type="text" class="form-control pull-right" id="cvv" placeholder="CVV">
+
+                            <input type="submit" id="price-modal-button" class="box-button" value="Proccess">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="box-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="padding-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="bigFooter">
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="our-contact">
+                                <h4 class="green-text">Our Contacts</h4>
+                                <p class="compani-title">MyHome Inc</p>
+                                <p>JC Main Road, Near Silnile tower<br> Pin-21542 NewYork US.</p>
+                                <p>(123) 456-789 - 1255-12584<br> email@domainname.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="quick-links">
+                                <h4 class="green-text">Quick Links</h4>
+                                <ul>
+                                    <li><a href="">Letest Events</a></li>
+                                    <li><a href="">Terms and Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="" data-toggle="modal" data-target="#logIn">Login</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="letest-post">
+                                <h4 class="green-text">Letest Posts</h4>
+                                <ul>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-bigFooter-item">
+                            <div class="letest-news">
+                                <h4 class="green-text">Letest News</h4>
+                                <ul>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                    <li><a href="">Natus error sit voluptatem accusantium doloremque</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bottom-footer">
+                        <div class="footer-left pull-left">
+                            <p>&copy; BITM 2018 All right reserved. Template By <span class="green-text">Rajib Hossain</span></p>
+                        </div>
+                        <div class="right-footer pull-right">
+                            <ul class="social-icons">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Scroll up button-->
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+
+
+
+    <script src="assets/js/vendor/jquery.12.0.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>
